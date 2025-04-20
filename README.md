@@ -5,14 +5,21 @@ This isn't technically my first project, but it’s the first one I felt was goo
 It’s a *frontend-only clone* of Spotify built with *HTML and CSS*. I aimed to make it as close to the original as possible, though there might be minor differences in fonts or layout. I'm still working on fixing bugs and improving responsiveness.
 
 ---
+## Why I Built This
 
-## Currently
-
-- HTML + CSS only  
-- Logged-out version  
-- No functionality yet (no login, no backend)
+I wanted to challenge myself with a real-world layout and test my HTML/CSS skills. It helped me learn a lot about positioning, spacing, and how large-scale UIs are structured.
 
 ---
+
+## Screenshots
+
+![Preview](./pics/preview/preview.jpg)
+
+---
+##Demo Video
+<video src="./preview/demo.mp4" controls autoplay loop width="100%"></video>
+## Currently
+- Logged-out version  front-end only
 
 ## Next Plans
 
@@ -20,32 +27,15 @@ It’s a *frontend-only clone* of Spotify built with *HTML and CSS*. I aimed to 
 - Make it fully responsive  
 - Possibly use JavaScript for interactivity  
 
----
+## Currently
+- Logged-out version  front-end only
 
-## Why I Built This
+## Next Plans
 
-I wanted to challenge myself with a real-world layout and test my HTML/CSS skills. It helped me learn a lot about positioning, spacing, and how large-scale UIs are structured.
+- Add backend (login/signup system)  
+- Make it fully responsive  
+- Possibly use JavaScript for interactivity  
 
----
-
-## Tech Used
-
-- HTML5  
-- CSS3
-
----
-
-## Live Preview
-
-Coming soon... (GitHub Pages or Netlify deployment planned)
-
----
-
-## Screenshots
-
-will add soon....
-
----
 
 ## Author
 **Mahmoodul Hassan**
