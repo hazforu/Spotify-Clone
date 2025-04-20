@@ -17,7 +17,7 @@ I wanted to challenge myself with a real-world layout and test my HTML/CSS skill
 
 ---
 ##Demo Video
-<video src="./preview/demo.mp4" controls autoplay loop width="100%"></video>
+<video src="./pics/preview/demo.mp4" controls autoplay loop width="100%"></video>
 ## Currently
 - Logged-out version  front-end only
 
