@@ -1,0 +1,103 @@
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+    .search-bar {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    .card {
+      width: 100px;
+    }
+  
+    .pic,
+    .artist {
+      width: 140px;
+      height: 100px;
+    }
+  }
+  
+  /* Below 900px: Sidebar hides, layout becomes vertical */
+  @media (max-width: 900px) {
+    .main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  
+    .main-box {
+      width: 100%;
+    }
+  
+    .search-bar {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      padding: 6px 10px;
+    }
+  
+    .shortcut {
+      display: none !important;
+    }
+  
+    .albums {
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .card {
+      width: 130px;
+    }
+  
+    .pic,
+    .artist {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  
+  /* Phones */
+  @media (max-width: 600px) {
+    .navbar-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .right-section {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  
+    .top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .bottom-texts {
+      flex-direction: column;
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .spotify-preview-banner {
+      padding: 12px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      width: 100%;
+      margin: 0;
+    }
+  
+    .footer {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .line {
+      width: 100%;
+    }
+  }

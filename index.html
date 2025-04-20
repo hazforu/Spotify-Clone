@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mahmoodul Hassan">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="scrollbar.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="./pics/Primary_Logo_Green_RGB.svg">
+  <title>Spotify - Web Player: Music For Everyone</title>
+</head>
+
+<body>
+
+
+  <div class="main">
+    <header class="navbar">
+      <nav class="navbar-content">
+        <div class="left-section">
+          <img src="pics/Primary_Logo_White_CMYK.svg" alt="Spotify Logo" class="logo">
+          <div class="home-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+              <path
+                d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z"
+                fill="currentColor"></path>
+            </svg><span class="tooltip">Home</span></div>
+          <div class="search-bar">
+            <span class="material-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 30">
+                <path
+                  d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                  fill="currentColor"></path>
+              </svg></span>
+            <input type="text" placeholder="What do you want to play?" />
+            <span class="shortcut">
+              <p>Ctrl </p>
+              <p>K</p>
+            </span>
+            <div class="divider1"></div>
+            <span id="browse"> <svg data-encore-id="icon" role="img" aria-hidden="true"
+                class="e-9812-icon e-9812-baseline" width="25px" height="25px" viewBox="0 0 24 24">
+                <path d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z" fill="currentColor"></path>
+                <path
+                  d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9H3.525zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4V2z"
+                  fill="currentColor"></path>
+              </svg> <span class="tooltip">Browser</span></span>
+
+
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="right">
+            <div class="link-wrap"><a href="#">Premium</a></div>
+            <div class="link-wrap"><a href="#">Support</a></div>
+            <div class="link-wrap"><a href="#">Download</a></div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="link-wrap"><span class="download"><span class="download-icon"><svg width="24" height="24"
+                  viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z">
+                  </path>
+                  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z"></path>
+                </svg>
+
+              </span><a href="#">Install App</a></span></div>
+          <div class="link-wrap"><a href="#">Sign up</a></div>
+          <button class="login-btn">Log in</button>
+
+        </div>
+      </nav>
+    </header>
+
+
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <div class="options">
+          <div>Your Library</div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="#e3e3e3">
+              <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+            </svg></div>
+        </div>
+        <div class="content">
+          <div class="box">
+            <div class="p1">Create your first playlist</div>
+            <div class="p2">It's easy, we'll help you </div>
+            <button class="badge">Create Playlist</button>
+          </div>
+          <div class="box">
+            <div class="p1">Let's find some podcasts follow</div>
+            <div class="p2">We'll keep you updated on new episodes </div>
+            <button class="badge">Browse podcasts</button>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="texts">
+            <p>Legal</p>
+            <p>Safety & Privacy Center</p>
+            <p>Privacy Policy</p>
+            <p>Cookies</p>
+            <p>About Ads</p>
+            <p>Accessibility</p>
+          </div>
+        </div>
+        <div class="link"><a href="#">cookies</a></div>
+        <div class="lang">
+          <button>
+            <div class="globe"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3">
+                <path
+                  d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+              </svg></div>
+
+            <p>English</p>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-box">
+      <div class="main-content">
+        <div class="heading">
+          <div class="top"><a class="song" href="#">Trending songs</a>
+            <a class="show" href="#">Show all</a>
+          </div>
+        </div>
+        <div class="albums">
+          <div class="card">
+            <div class="pic"><img src="pics/download.png" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Hope</div>
+            <div class="singer">XXX Tentacion</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/855e9a81c323ab2cb8d98b016867dbe6.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">New Jeans</div>
+            <div class="singer">New Jeans</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/hope.webp" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Hope</div>
+            <div class="singer">NF</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/download.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Stay Away</div>
+            <div class="singer">Bella/Byg Smyle</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/download (2).jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">I'm a Kid</div>
+            <div class="singer">Bella</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/download (3).jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Jo Bhi Main</div>
+            <div class="singer">Mohit Chauhan</div>
+
+          </div>
+          <!-- <div class="card">
+            <div class="pic"><img src="pics/download (1).jpg" alt=""><div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"/></svg></div></div>
+            <div class="title">Für elise</div>
+            <div class="singer">Ludwig Van Beethoven</div>
+
+          </div> -->
+        </div>
+        <div class="heading">
+          <div class="top"><a class="song" href="#">Popular Artists</a>
+            <a class="show" href="#">Show all</a>
+          </div>
+        </div>
+        <div class="albums">
+          <div class="card">
+            <div class="artist"><img src="pics/artists/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Arijit Singh</div>
+            <div class="singer">Artist</div>
+          </div>
+          <div class="card">
+            <div class="artist"><img src="pics/artists/ab6761610000e5ebc40600e02356cc86f0debe84.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Atif Aslam</div>
+            <div class="singer">Artist</div>
+          </div>
+          <div class="card">
+            <div class="artist"><img src="pics/artists/ab6761610000e5ebcb6926f44f620555ba444fca.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Pritam</div>
+            <div class="singer">Artist</div>
+          </div>
+          <div class="card">
+            <div class="artist"><img src="pics/artists/ab6761610000e5eb4a21b4760d2ecb7b0dcdc8da.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Billie Eilish</div>
+            <div class="singer">Artist</div>
+          </div>
+          <div class="card">
+            <div class="artist"><img src="pics/artists/NF.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">NF</div>
+            <div class="singer">Artist</div>
+          </div>
+          <div class="card">
+            <div class="artist"><img src="pics/artists/eminem.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Eminem</div>
+            <div class="singer">Artist</div>
+          </div>
+        </div>
+        <div class="heading">
+          <div class="top"><a class="song" href="#">Popular albums and singles</a>
+            <a class="show" href="#">Show all</a>
+          </div>
+        </div>
+        <div class="albums">
+          <div class="card">
+            <div class="pic"><img src="pics/artists/billie.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">HAPPIER THAN EVER</div>
+            <div class="singer">2021 &#x2022 Billie Eilish</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/album/Wrld_on_Drugs.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Future & Juice Wrld Present... Wrld on Drugs</div>
+            <div class="singer">2018 &#x2022 Future, Juice WRLD</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/album/ab67616d0000b273fe8fbfb90a20a9c725714709.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Stranger Things: Soundtrack from the Netflix Series</div>
+            <div class="singer">2019 &#x2022 Various Artists</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/album/nf.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Therapy Session</div>
+            <div class="singer">2016 &#x2022 NF</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/album/ab67616d0000b273ddf3221471665f72fbce4d41.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Dark: Cycle 1 (Original Music From The Netflix Series) </div>
+            <div class="singer">Ben Frost</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/album/ab67616d0000b27352fe6875028c892308ffc2f7.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="title">Jab We Met</div>
+            <div class="singer">Pritam, Irshad Kamil, Sandesh Shandilya</div>
+
+          </div>
+        </div>
+        <div class="heading">
+          <div class="top"><a class="song" href="#">Trending charts</a>
+
+          </div>
+        </div>
+        <div class="albums">
+          <div class="card">
+            <div class="pic"><img src="pics/New folder/region_global_default.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+
+            <div class="singer">Your weekly update of the most played tracks right now - Global.</div>
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/New folder/region_in_default (2).jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="singer">Your weekly update of the most played tracks right now - India.</div>
+          </div>
+
+          <div class="card">
+            <div class="pic"><img src="pics/New folder/download.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="singer">Your daily update of the most played tracks right now - Global.</div>
+
+          </div>
+
+          <div class="card">
+            <div class="pic"><img src="pics/New folder/region_in_default (1).jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+
+            <div class="singer">Your daily update of the most played tracks right now - India.</div>
+
+          </div>
+          <div class="card">
+            <div class="pic"><img src="pics/New folder/region_global_default (1).jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+            <div class="singer">Your weekly update of the most viral tracks right now - Global.</div>
+          </div>
+
+          <div class="card">
+            <div class="pic"><img src="pics/New folder/region_in_default.jpg" alt="">
+              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z" />
+                </svg></div>
+            </div>
+
+            <div class="singer">Your weekly update of the most viral tracks right now - India.</div>
+
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="bottom-texts">
+            <div class="bottom-text">
+              <p>Company</p>
+              <a href="#">About</a>
+              <a href="#">Jobs</a>
+              <a href="#">For the Record</a>
+            </div>
+            <div class="bottom-text">
+              <p>Communities</p>
+              <a href="#"> For Artists</a>
+              <a href="#">Developers</a>
+              <a href="#">Advertising</a>
+              <a href="#">Investors</a><a href="#">Vendors</a>
+            </div>
+            <div class="bottom-text">
+              <p>Useful links</p>
+              <a href="#">Support</a>
+              <a href="#">Free Mobile App</a>
+            </div>
+            <div class="bottom-text">
+              <p>Spotify Plans</p>
+              <a href="#"> Premium Individual</a>
+              <a href="#">Premium Duo</a>
+              <a href="#">AdvPremium Family</a>
+              <a href="#">Premium Student</a><a href="#">Spotify Free</a>
+            </div>
+          </div>
+
+          <div class="logo-container">
+
+          </div>
+          <div class="logo-icon"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" font-family="none" font-weight="none" font-size="none"
+                text-anchor="none">
+                <g transform="scale(10.66667,10.66667)">
+                  <path
+                    d="M8,3c-2.757,0 -5,2.243 -5,5v8c0,2.757 2.243,5 5,5h8c2.757,0 5,-2.243 5,-5v-8c0,-2.757 -2.243,-5 -5,-5zM8,5h8c1.654,0 3,1.346 3,3v8c0,1.654 -1.346,3 -3,3h-8c-1.654,0 -3,-1.346 -3,-3v-8c0,-1.654 1.346,-3 3,-3zM17,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM12,7c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5zM12,9c1.654,0 3,1.346 3,3c0,1.654 -1.346,3 -3,3c-1.654,0 -3,-1.346 -3,-3c0,-1.654 1.346,-3 3,-3z">
+                  </path>
+                </g>
+              </g>
+            </svg></div>
+          <div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" font-family="none" font-weight="none" font-size="none"
+                text-anchor="none" style="mix-blend-mode: normal">
+                <g transform="scale(8.53333,8.53333)">
+                  <path
+                    d="M28,6.937c-0.957,0.425 -1.985,0.711 -3.064,0.84c1.102,-0.66 1.947,-1.705 2.345,-2.951c-1.03,0.611 -2.172,1.055 -3.388,1.295c-0.973,-1.037 -2.359,-1.685 -3.893,-1.685c-2.946,0 -5.334,2.389 -5.334,5.334c0,0.418 0.048,0.826 0.138,1.215c-4.433,-0.222 -8.363,-2.346 -10.995,-5.574c-0.458,0.788 -0.721,1.704 -0.721,2.683c0,1.85 0.941,3.483 2.372,4.439c-0.874,-0.028 -1.697,-0.268 -2.416,-0.667c0,0.023 0,0.044 0,0.067c0,2.585 1.838,4.741 4.279,5.23c-0.447,0.122 -0.919,0.187 -1.406,0.187c-0.343,0 -0.678,-0.034 -1.003,-0.095c0.679,2.119 2.649,3.662 4.983,3.705c-1.825,1.431 -4.125,2.284 -6.625,2.284c-0.43,0 -0.855,-0.025 -1.273,-0.075c2.361,1.513 5.164,2.396 8.177,2.396c9.812,0 15.176,-8.128 15.176,-15.177c0,-0.231 -0.005,-0.461 -0.015,-0.69c1.043,-0.753 1.948,-1.692 2.663,-2.761z">
+                  </path>
+                </g>
+              </g>
+            </svg></div>
+          <div class="logo-icon"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(8.53333,8.53333)">
+                  <path
+                    d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.016 4.432,10.984 10.206,11.852v-8.672h-2.969v-3.154h2.969v-2.099c0,-3.475 1.693,-5 4.581,-5c1.383,0 2.115,0.103 2.461,0.149v2.753h-1.97c-1.226,0 -1.654,1.163 -1.654,2.473v1.724h3.593l-0.487,3.154h-3.106v8.697c5.857,-0.794 10.376,-5.802 10.376,-11.877c0,-6.627 -5.373,-12 -12,-12z">
+                  </path>
+                </g>
+              </g>
+            </svg></div>
+
+
+        </div>
+
+        <div class="end">
+          <hr class="line">
+          <div>© 2025 Spotify AB</div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"><div class="spotify-preview-banner">
+
+      <div class="para">
+        <div id="upper">Preview of Spotify</div>
+        <div id="lower">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</div>
+      </div>
+      <div class="sign-up"><button>Sign up free</button></div>
+    </div></footer>
+    
+  </div>
+</body>
+
+</html>
