@@ -42,18 +42,63 @@ body {
 
 .options {
   display: flex;
-  height: 3rem;
+  align-items: center; 
+  justify-content: space-between;
+  margin-bottom: 0.97rem;
   position: sticky;
   top: 0;
   font-weight: 700;
   padding: 1.2rem 0.99rem;
+  padding-top:1rem;
   color: white;
-  justify-content: space-between;
+}
+
+.plus {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+ 
+}
+
+.plus svg {
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  opacity:0.7;
+  padding:5px;
+  
+
+}
+
+.plus:hover svg {
+  background-color: #201e1eea;
+  opacity:1;
+}
+.plus .tooltip{
+  display: flex;
+  position: absolute;
+  /* bottom: 100%; Place it above the icon */
+  /* margin-bottom: 0.5rem;  */
+  margin-bottom:-0.4rem;
+  width:9.5rem;
+  font-size:0.85rem;
+  
+
+}
+.plus:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.plus {
+  position: relative;
 }
 
 .content {
   align-items: center;
   justify-content: center;
+ 
   height: calc(100vh - 28.75rem);
   background-color: #121212;
   color: white;
@@ -63,7 +108,6 @@ body {
 .box {
   background-color: #212020;
   height: 6.5rem;
-  
   margin: 0rem 0rem 1.3rem 0;
   border-radius: 0.5rem;
   padding: 0.75rem 1.25rem;
@@ -92,6 +136,7 @@ body {
   margin-top: 0.5rem;
   font-weight: 700;
   transition: background-color 0.5s ease;
+  cursor: pointer;
 
 }
 .badge:hover{
@@ -103,7 +148,7 @@ body {
   height: 3.75rem;
   width: 100%;
   position: sticky;
-  margin-top: 2.4rem;
+  margin-top: 2.5rem;
   width: 21.875rem;
   padding: 0.5rem 1.6rem;
   color: white;
@@ -113,10 +158,9 @@ body {
 .texts {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  font-size: 0.7rem;
-  padding-right: 2rem;
-  
+  gap: 0.9rem;
+  margin-bottom:1rem;
+  font-size: 0.7rem;  
 }
 
 .texts p {
@@ -127,7 +171,7 @@ body {
 .link a {
   text-decoration: none;
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 0.5rem 1.6rem;
 }
 .link a:hover {
@@ -143,18 +187,17 @@ body {
   align-items: center;
   border-radius: 6.25rem;
   border: solid 0.0625rem rgb(114, 103, 103);
-
-  padding: 0.5rem 0.9rem;
-
+  padding: 0.5rem 0.7rem;
   margin-top: 2.5rem;
   margin-left: 1.6rem;
- 
 }
 
 .globe svg{
   width: 1.25rem;
   height: 1.25rem;
   opacity: 0.98;
+  margin-top:0.17rem;
+  margin-right:0.1rem;
 }
 
 .lang button {
@@ -167,6 +210,7 @@ body {
   border: none;
   font-weight: 700;
   transition: background-color 0.5s ease;
+  cursor: pointer;
 }
 .lang:hover {
   border: 0.03125rem solid rgba(255, 255, 255, 0.884);
@@ -309,7 +353,7 @@ text-decoration: underline;
   font-size: small;
 
 }
-.bottom{
+.bottom2{
   display: flex;
   
   width:99%;
@@ -320,7 +364,7 @@ text-decoration: underline;
   justify-content: space-between;
   width:70%;
   margin-right:7.5rem;
- 
+  margin-left:0.9rem;
 }
 .bottom-text{
   margin:0.9rem;
@@ -349,30 +393,43 @@ a{
     height: 1.375rem;
     color: #fff;
     padding:0.6rem;
-    margin-top:1rem;
+    margin-top:1.3rem;
     border-radius: 50%;
     background-color: #242222;
-    cursor: pointer;
+    
     margin-left:1.0625rem;
+    
+  }
+  .logo-icon:hover{
+    background-color: #595656;
+  }
+  .logo-icon .tooltip{
+    border-radius:0;
+    font-weight:400;
+    visibility: 0.4;
+    background-color: #212020;
+    border: 0.03125rem solid rgba(255, 255, 255, 0.492);
+
   }
   .line{
     border: none;
     height: 0.0125rem;
-    width:64.4375rem;
+    width:64.2rem;
     background-color: #eee7e7; 
-    opacity: 0.2;
+    opacity: 0.1;
   }
   
   .end{
-    margin-top:10.625rem;
+    margin-top:1.2rem;
     
   }
   .end div{
     margin-top: 2.5rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.99rem;
     color: white;
-    opacity: 0.7;
-    padding-bottom: 15.75rem;
+    opacity: 0.65;
+    padding-bottom: 13.95rem;
+    font-size: 0.89em;
     
   }
   

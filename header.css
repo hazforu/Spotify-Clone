@@ -8,21 +8,24 @@
   color: #fff;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
 }
-
+.home-icon .tooltip{
+  bottom: -1.9rem; 
+}
 .home-icon:hover .tooltip,
-#browse:hover .tooltip {
+#browse:hover .tooltip,
+.logo-icon:hover .tooltip {
   opacity: 1;
   visibility: visible;
 }
 
 /* Tooltip container positioning for icons */
-.home-icon, #browse {
+.home-icon, #browse, .logo-icon {
   position: relative;
 }
 
@@ -54,7 +57,7 @@
 .logo {
   width: 2.25rem;
   height: 2.25rem;
-  margin-left: 0.4375rem;
+  margin-left: 0.2rem;
   margin-right: 0.4375rem;
   cursor: pointer;
 }

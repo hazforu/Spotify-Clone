@@ -1,4 +1,4 @@
-/* Tablets and small laptops */
+
 @media (max-width: 1024px) {
     .search-bar {
       width: 100%;
@@ -16,7 +16,7 @@
     }
   }
   
-  /* Below 900px: Sidebar hides, layout becomes vertical */
+  
   @media (max-width: 900px) {
     .main {
       flex-direction: column;
@@ -58,7 +58,7 @@
     }
   }
   
-  /* Phones */
+ 
   @media (max-width: 600px) {
     .navbar-content {
       flex-direction: column;
